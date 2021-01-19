@@ -90,9 +90,16 @@ body {
   font-size: 2.5em;
 }
 
+.section-tekst {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  font-size: large;
+  color: #333;
+  text-align: center;
+}
+
 .main-footer {
-  /* background-image: url(img/kark.jpg); */
-  background-color: #ec0c0c;
+  background-color: #080808de;
   color: white;
   padding: 0.25em 0;
 }
@@ -298,4 +305,19 @@ body {
   margin: 40px auto 80px auto;
   font-size: 1.75em;
   border: none;
+}
+
+.music {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: center;
+  padding: 50px 100px 50px 200px;
+}
+
+.mix {
+  border: none;
+  border-radius: 10px;
+  box-shadow: #050808;
 }
