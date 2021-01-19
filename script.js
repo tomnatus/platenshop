@@ -49,7 +49,7 @@ function removeCartItem(event) {
     updateCartTotal();
 }
 function purchaseClicked() {
-    alert('Bedankt voor jouw aankoop.');
+    alert('Bedankt voor jouw aankoop.' + ' Prijs : ' + localStorage.prijs +  ' €');
     var cartItems = document.getElementsByClassName('cart-items')[0];
     
     while (cartItems.hasChildNodes()) {
@@ -107,6 +107,7 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100;
     localStorage.setItem("prijs", total);
+    
     
 
     //sessionStorage.setItem("totaalBedrag", total );
